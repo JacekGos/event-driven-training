@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+twitter-to-kafka-service/twitter-to-kafka-service/logs/
+
