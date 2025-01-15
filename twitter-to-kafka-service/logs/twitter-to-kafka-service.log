@@ -33,3 +33,362 @@
 2025-01-15 19:41:41 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
 2025-01-15 19:41:41 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
 2025-01-15 19:41:54 [SpringApplicationShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterToKafkaStreamRunner - Closing twitter stream
+2025-01-15 20:33:54 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 22596 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:33:54 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:33:55 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.787 seconds (process running for 1.21)
+2025-01-15 20:33:55 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:33:55 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:33:55 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:33:55 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:35:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 25316 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:35:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:35:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.643 seconds (process running for 1.005)
+2025-01-15 20:35:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:35:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:35:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:35:00 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:35:00 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - starterd new thread
+2025-01-15 20:35:40 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 18936 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:35:40 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:35:40 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.639 seconds (process running for 0.998)
+2025-01-15 20:35:40 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:35:40 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:35:40 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:35:40 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:35:40 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - starterd new thread
+2025-01-15 20:36:05 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 17512 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:36:05 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:36:06 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.653 seconds (process running for 1.01)
+2025-01-15 20:36:06 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:36:06 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:36:06 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:36:06 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:36:06 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - starterd new thread
+2025-01-15 20:36:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 18280 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:36:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:36:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.64 seconds (process running for 1.004)
+2025-01-15 20:36:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:36:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:36:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:36:32 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:36:32 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - starterd new thread
+2025-01-15 20:37:18 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 9212 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:37:18 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:37:19 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.644 seconds (process running for 1.028)
+2025-01-15 20:37:19 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:37:19 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:37:19 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:37:19 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:38:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 24456 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:38:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:38:02 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.607 seconds (process running for 0.952)
+2025-01-15 20:38:02 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:38:02 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:38:02 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:38:02 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:38:02 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - starterd new thread
+2025-01-15 20:38:07 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 6324 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:38:07 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:38:07 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.623 seconds (process running for 1.037)
+2025-01-15 20:38:07 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:38:07 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:38:07 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:38:07 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:38:07 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - starterd new thread
+2025-01-15 20:38:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 18928 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:38:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:38:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.639 seconds (process running for 1.002)
+2025-01-15 20:38:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:38:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:38:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:38:28 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:38:28 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - starterd new thread
+2025-01-15 20:38:28 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - in while loop
+2025-01-15 20:38:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 18856 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:38:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:38:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.613 seconds (process running for 0.932)
+2025-01-15 20:38:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:38:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:38:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:38:48 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:38:48 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - starterd new thread
+2025-01-15 20:38:48 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - in while loop
+2025-01-15 20:38:48 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getFormattedTweet started
+2025-01-15 20:39:05 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 20856 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:39:05 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:39:05 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.65 seconds (process running for 1.362)
+2025-01-15 20:39:05 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:39:05 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:39:05 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:39:05 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:39:05 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - starterd new thread
+2025-01-15 20:39:05 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - in while loop
+2025-01-15 20:39:05 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getFormattedTweet started
+2025-01-15 20:39:15 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 12680 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:39:15 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:39:15 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.664 seconds (process running for 1.095)
+2025-01-15 20:39:15 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:39:15 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:39:15 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:39:15 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:39:15 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - starterd new thread
+2025-01-15 20:39:15 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - in while loop
+2025-01-15 20:39:56 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getFormattedTweet started
+2025-01-15 20:40:04 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 25412 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:40:04 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:40:04 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.633 seconds (process running for 0.991)
+2025-01-15 20:40:04 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:40:04 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:40:04 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:40:04 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:40:04 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - starterd new thread
+2025-01-15 20:40:04 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - in while loop
+2025-01-15 20:40:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 2732 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:40:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:40:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.639 seconds (process running for 1.001)
+2025-01-15 20:40:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:40:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:40:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:40:21 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:40:21 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - starterd new thread
+2025-01-15 20:40:21 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - in while loop
+2025-01-15 20:40:21 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getFormattedTweet started
+2025-01-15 20:41:20 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 15160 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:41:20 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:41:20 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.587 seconds (process running for 0.897)
+2025-01-15 20:41:20 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:41:20 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:41:20 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:41:20 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:41:20 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - starterd new thread
+2025-01-15 20:41:20 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - in while loop
+2025-01-15 20:41:20 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getFormattedTweet started
+2025-01-15 20:41:20 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getFormattedTweet with params [A, B, C, D]
+2025-01-15 20:41:20 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - formatTweetAsJsonWithParams returned tweet: [A, B, C, D]
+2025-01-15 20:41:20 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - formatTweetAsJsonWithParams returned tweet: {"created_at":"{0}","id":"{1}","text":"{2}","user":{"id":"{3}"}}
+2025-01-15 20:41:44 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 18348 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:41:44 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:41:44 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.632 seconds (process running for 0.988)
+2025-01-15 20:41:44 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:41:44 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:41:44 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:41:44 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:41:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - starterd new thread
+2025-01-15 20:41:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - in while loop
+2025-01-15 20:41:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getFormattedTweet started
+2025-01-15 20:41:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getFormattedTweet with params [Wed Jan 15 20:41:44 CET 2025, B, C, D]
+2025-01-15 20:41:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - formatTweetAsJsonWithParams returned tweet: [Wed Jan 15 20:41:44 CET 2025, B, C, D]
+2025-01-15 20:41:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - formatTweetAsJsonWithParams returned tweet: {"created_at":"{0}","id":"{1}","text":"{2}","user":{"id":"{3}"}}
+2025-01-15 20:41:58 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 24300 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:41:58 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:41:58 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.644 seconds (process running for 1.01)
+2025-01-15 20:41:58 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:41:58 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:41:58 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:41:58 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:41:58 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - starterd new thread
+2025-01-15 20:41:58 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - in while loop
+2025-01-15 20:41:58 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getFormattedTweet started
+2025-01-15 20:41:58 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getFormattedTweet with params [Wed Jan 15 20:41:58 CET 2025, 7593128816187672608, C, D]
+2025-01-15 20:41:58 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - formatTweetAsJsonWithParams returned tweet: [Wed Jan 15 20:41:58 CET 2025, 7593128816187672608, C, D]
+2025-01-15 20:41:58 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - formatTweetAsJsonWithParams returned tweet: {"created_at":"{0}","id":"{1}","text":"{2}","user":{"id":"{3}"}}
+2025-01-15 20:43:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 712 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:43:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:43:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.635 seconds (process running for 1.003)
+2025-01-15 20:43:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:43:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:43:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:43:00 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:43:00 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - starterd new thread
+2025-01-15 20:43:00 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - in while loop
+2025-01-15 20:43:00 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getFormattedTweet started
+2025-01-15 20:43:00 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getFormattedTweet with params [Wed Jan 15 20:43:00 CET 2025, 202761165789772499, C, D]
+2025-01-15 20:43:00 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - formatTweetAsJsonWithParams returned tweet: [Wed Jan 15 20:43:00 CET 2025, 202761165789772499, C, D]
+2025-01-15 20:43:00 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - formatTweetAsJsonWithParams returned tweet: {"created_at":"{0}","id":"{1}","text":"{2}","user":{"id":"{3}"}}
+2025-01-15 20:43:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 17180 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:43:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:43:13 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.609 seconds (process running for 0.946)
+2025-01-15 20:43:13 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:43:13 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:43:13 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:43:13 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:43:13 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - starterd new thread
+2025-01-15 20:43:13 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - in while loop
+2025-01-15 20:43:13 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getFormattedTweet started
+2025-01-15 20:43:13 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getRandomTweetContent start
+2025-01-15 20:43:13 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - constructRandomTweet start
+2025-01-15 20:43:29 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 23384 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:43:29 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:43:29 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.65 seconds (process running for 1.022)
+2025-01-15 20:43:29 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:43:29 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:43:29 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:43:29 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:43:29 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - starterd new thread
+2025-01-15 20:43:29 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - in while loop
+2025-01-15 20:43:29 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getFormattedTweet started
+2025-01-15 20:43:29 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getRandomTweetContent start
+2025-01-15 20:43:29 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - constructRandomTweet start
+2025-01-15 20:43:46 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 17512 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:43:46 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:43:46 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.619 seconds (process running for 0.957)
+2025-01-15 20:43:46 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:43:46 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:43:46 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:43:46 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:43:46 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - starterd new thread
+2025-01-15 20:43:46 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - in while loop
+2025-01-15 20:43:46 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getFormattedTweet started
+2025-01-15 20:43:46 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getRandomTweetContent start
+2025-01-15 20:43:46 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - constructRandomTweet start tweetLength: 5
+2025-01-15 20:44:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 22104 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:44:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:44:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.761 seconds (process running for 1.216)
+2025-01-15 20:44:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:44:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:44:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:44:01 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:44:01 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - starterd new thread
+2025-01-15 20:44:01 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - in while loop
+2025-01-15 20:44:13 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getFormattedTweet started
+2025-01-15 20:44:15 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getRandomTweetContent start
+2025-01-15 20:44:15 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - constructRandomTweet start tweetLength: 14
+2025-01-15 20:44:43 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 8152 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:44:43 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:44:44 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.695 seconds (process running for 1.132)
+2025-01-15 20:44:44 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:44:44 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:44:44 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:44:44 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:44:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - starterd new thread
+2025-01-15 20:44:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - in while loop
+2025-01-15 20:44:52 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getFormattedTweet started
+2025-01-15 20:44:55 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getRandomTweetContent start
+2025-01-15 20:44:55 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - constructRandomTweet start tweetLength: 14
+2025-01-15 20:46:22 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 24176 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:46:22 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:46:22 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.689 seconds (process running for 1.125)
+2025-01-15 20:46:22 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:46:22 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:46:22 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:46:22 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:46:22 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - starterd new thread
+2025-01-15 20:46:22 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - in while loop
+2025-01-15 20:46:26 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getFormattedTweet started
+2025-01-15 20:46:26 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getRandomTweetContent start
+2025-01-15 20:46:26 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - constructRandomTweet start tweetLength: 12
+2025-01-15 20:47:11 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 19208 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:47:11 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:47:11 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.706 seconds (process running for 1.131)
+2025-01-15 20:47:11 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:47:11 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:47:11 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:47:11 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:47:11 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - starterd new thread
+2025-01-15 20:47:11 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - in while loop
+2025-01-15 20:47:14 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getFormattedTweet started
+2025-01-15 20:47:14 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getRandomTweetContent start
+2025-01-15 20:47:14 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - constructRandomTweet start tweetLength: 11
+2025-01-15 20:47:24 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - constructRandomTweet tweet: tellus.sitatipsumamet,dolorElasticsearchutvitae,elit.venenatisLorem
+2025-01-15 20:47:24 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getFormattedTweet with params [Wed Jan 15 20:47:14 CET 2025, 2044435209059938999, tellus.sitatipsumamet,dolorElasticsearchutvitae,elit.venenatisLorem, D]
+2025-01-15 20:47:24 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - formatTweetAsJsonWithParams returned tweet: [Wed Jan 15 20:47:14 CET 2025, 2044435209059938999, tellus.sitatipsumamet,dolorElasticsearchutvitae,elit.venenatisLorem, D]
+2025-01-15 20:47:24 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - formatTweetAsJsonWithParams returned tweet: {"created_at":"{0}","id":"{1}","text":"{2}","user":{"id":"{3}"}}
+2025-01-15 20:47:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 16836 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:47:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:47:26 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.644 seconds (process running for 1.024)
+2025-01-15 20:47:26 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:47:26 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:47:26 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:47:26 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:47:26 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - starterd new thread
+2025-01-15 20:47:26 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - in while loop
+2025-01-15 20:47:26 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getFormattedTweet started
+2025-01-15 20:47:26 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getRandomTweetContent start
+2025-01-15 20:47:26 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - constructRandomTweet start tweetLength: 9
+2025-01-15 20:47:26 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - constructRandomTweet tweet: Vestibulumurnaatlibero,venenatisElasticsearchipsumlaoreetadipiscinglaoreet
+2025-01-15 20:47:26 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getFormattedTweet with params [Wed Jan 15 20:47:26 CET 2025, 3324268914515248592, Vestibulumurnaatlibero,venenatisElasticsearchipsumlaoreetadipiscinglaoreet, D]
+2025-01-15 20:47:26 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - formatTweetAsJsonWithParams returned tweet: [Wed Jan 15 20:47:26 CET 2025, 3324268914515248592, Vestibulumurnaatlibero,venenatisElasticsearchipsumlaoreetadipiscinglaoreet, D]
+2025-01-15 20:47:26 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - formatTweetAsJsonWithParams returned tweet: {"created_at":"{0}","id":"{1}","text":"{2}","user":{"id":"{3}"}}
+2025-01-15 20:48:06 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 4380 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:48:06 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:48:06 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.61 seconds (process running for 0.934)
+2025-01-15 20:48:06 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:48:06 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:48:06 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:48:06 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:48:06 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - starterd new thread
+2025-01-15 20:48:06 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - in while loop
+2025-01-15 20:48:06 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - getRandomTweetContent start
+2025-01-15 20:48:06 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - constructRandomTweet start tweetLength: 13
+2025-01-15 20:48:06 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - constructRandomTweet tweet: elit.urnaurnavitae,adipiscingurnaelit.Kafkaurnaamet,ipsumlibero,fermentum.ut
+2025-01-15 20:48:06 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - formatTweetAsJsonWithParams returned tweet: [Wed Jan 15 20:48:06 CET 2025, 4335629298001670933, elit.urnaurnavitae,adipiscingurnaelit.Kafkaurnaamet,ipsumlibero,fermentum.ut, 6580132759639613465]
+2025-01-15 20:48:06 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - formatTweetAsJsonWithParams returned tweet: {"created_at":"{0}","id":"{1}","text":"{2}","user":{"id":"{3}"}}
+2025-01-15 20:48:51 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 18176 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:48:51 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:48:52 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.587 seconds (process running for 0.902)
+2025-01-15 20:48:52 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:48:52 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:48:52 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:48:52 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:50:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 24812 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:50:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:50:02 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.644 seconds (process running for 1.008)
+2025-01-15 20:50:02 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:50:02 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:50:02 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:50:02 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:50:14 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 14708 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:50:14 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:50:15 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.64 seconds (process running for 0.999)
+2025-01-15 20:50:15 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:50:15 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:50:15 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:50:15 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:50:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 320 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:50:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:50:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.677 seconds (process running for 1.073)
+2025-01-15 20:50:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:50:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:50:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:50:28 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:50:46 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 21372 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:50:46 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:50:46 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.673 seconds (process running for 1.146)
+2025-01-15 20:50:46 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:50:46 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:50:46 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:50:46 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:51:24 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 328 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:51:24 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:51:24 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.635 seconds (process running for 0.975)
+2025-01-15 20:51:24 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:51:24 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:51:24 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:51:24 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:51:24 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - formattedTweetAsRawJson: {"created_at":"{0}","id":"{1}","text":"{2}","user":{"id":"{3}"}}
+2025-01-15 20:51:53 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 17668 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:51:53 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:51:53 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.644 seconds (process running for 0.997)
+2025-01-15 20:51:53 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:51:53 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:51:53 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:51:53 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:51:53 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - formattedTweetAsRawJson: {"created_at":"{0}","id":"{1}","text":"{2}","user":{"id":"{3}"}}
+2025-01-15 20:52:11 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 24656 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:52:11 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:52:11 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.641 seconds (process running for 0.998)
+2025-01-15 20:52:11 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:52:11 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:52:11 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:52:11 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:52:11 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - formattedTweetAsRawJson: {"created_at":"{0}","id":"{1}","text":"{2}","user":{"id":"{3}"}}
+2025-01-15 20:52:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 19640 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-15 20:52:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 20:52:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.637 seconds (process running for 0.998)
+2025-01-15 20:52:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 20:52:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:52:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 20:52:34 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 20:52:35 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Twitter status with text: lectus ipsum purus adipiscing massa Kafka Lorem sed Lorem
+2025-01-15 20:52:45 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Twitter status with text: dolor ultricies massa dolor posuere malesuada sit magna Java libero posuere elit Fusce libero sit Fusce
+2025-01-15 20:52:55 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Twitter status with text: posuere amet pulvinar lectus massa pulvinar Maecenas Microservice Maecenas consectetuer massa massa dolor

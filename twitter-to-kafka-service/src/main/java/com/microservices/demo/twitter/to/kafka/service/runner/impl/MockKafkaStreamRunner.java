@@ -12,7 +12,6 @@ import twitter4j.Status;
 import twitter4j.TwitterException;
 import twitter4j.TwitterObjectFactory;
 
-import java.text.DateFormat;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
@@ -25,13 +24,37 @@ import java.util.concurrent.ThreadLocalRandom;
 @ConditionalOnProperty(name = "twitter-to-kafka-service.enable-mock-tweets", havingValue = "true")
 public class MockKafkaStreamRunner implements StreamRunner {
 
+    private static final Logger LOG = LoggerFactory.getLogger(MockKafkaStreamRunner.class);
+
     private final TwitterToKafkaServiceConfigData twitterToKafkaServiceConfigData;
+
     private final TwitterKafkaStatusListener twitterKafkaStatusListener;
+
     private static final Random RANDOM = new Random();
-    private static final String[] WORDS = {
-            "Lorem", "ipsum", "dolor", "sit", "amet,", "consectetur", "adipiscing", "elit.",
-            "Vestibulum", "ut", "tellus", "tellus.", "Quisque", "urna", "libero,", "venenatis",
-            "at", "laoreet", "vitae,", "fermentum."
+
+    private static final String[] WORDS = new String[]{
+            "Lorem",
+            "ipsum",
+            "dolor",
+            "sit",
+            "amet",
+            "consectetuer",
+            "adipiscing",
+            "elit",
+            "Maecenas",
+            "porttitor",
+            "congue",
+            "massa",
+            "Fusce",
+            "posuere",
+            "magna",
+            "sed",
+            "pulvinar",
+            "ultricies",
+            "purus",
+            "lectus",
+            "malesuada",
+            "libero"
     };
 
     private static final String tweetAsRawJson = "{" +
@@ -43,11 +66,10 @@ public class MockKafkaStreamRunner implements StreamRunner {
 
     private static final String TWITTER_STATUS_DATE_FORMAT = "EEE MMM dd HH:mm:ss zzz yyyy";
 
-    private static final Logger LOG = LoggerFactory.getLogger(MockKafkaStreamRunner.class);
-
-    public MockKafkaStreamRunner(TwitterToKafkaServiceConfigData twitterToKafkaServiceConfigData, TwitterKafkaStatusListener twitterKafkaStatusListener) {
-        this.twitterToKafkaServiceConfigData = twitterToKafkaServiceConfigData;
-        this.twitterKafkaStatusListener = twitterKafkaStatusListener;
+    public MockKafkaStreamRunner(TwitterToKafkaServiceConfigData configData,
+                                 TwitterKafkaStatusListener statusListener) {
+        this.twitterToKafkaServiceConfigData = configData;
+        this.twitterKafkaStatusListener = statusListener;
     }
 
     @Override
@@ -57,13 +79,10 @@ public class MockKafkaStreamRunner implements StreamRunner {
         final int maxTweetLength = twitterToKafkaServiceConfigData.getMockMaxTweetLength();
         long sleepTimeMs = twitterToKafkaServiceConfigData.getMockSleepMs();
         LOG.info("Starting mock filtering twitter streams for keywords {}", Arrays.toString(keywords));
-
         simulateTwitterStream(keywords, minTweetLength, maxTweetLength, sleepTimeMs);
     }
 
-    private void simulateTwitterStream(
-            String[] keywords, int minTweetLength,
-            int maxTweetLength, long sleepTimeMs) {
+    private void simulateTwitterStream(String[] keywords, int minTweetLength, int maxTweetLength, long sleepTimeMs) {
         Executors.newSingleThreadExecutor().submit(() -> {
             try {
                 while (true) {
@@ -76,7 +95,6 @@ public class MockKafkaStreamRunner implements StreamRunner {
                 LOG.error("Error creating twitter status!", e);
             }
         });
-
     }
 
     private void sleep(long sleepTimeMs) {
@@ -94,14 +112,14 @@ public class MockKafkaStreamRunner implements StreamRunner {
                 getRandomTweetContent(keywords, minTweetLength, maxTweetLength),
                 String.valueOf(ThreadLocalRandom.current().nextLong(Long.MAX_VALUE))
         };
-
         return formatTweetAsJsonWithParams(params);
     }
 
-    private static String formatTweetAsJsonWithParams(String[] params) {
+    private String formatTweetAsJsonWithParams(String[] params) {
         String tweet = tweetAsRawJson;
+
         for (int i = 0; i < params.length; i++) {
-            tweet = tweet.replace("{" + "}", params[i]);
+            tweet = tweet.replace("{" + i + "}", params[i]);
         }
         return tweet;
     }
@@ -109,16 +127,17 @@ public class MockKafkaStreamRunner implements StreamRunner {
     private String getRandomTweetContent(String[] keywords, int minTweetLength, int maxTweetLength) {
         StringBuilder tweet = new StringBuilder();
         int tweetLength = RANDOM.nextInt(maxTweetLength - minTweetLength + 1) + minTweetLength;
-        return constructRandomTweet(keywords, tweetLength, tweet);
+        return constructRandomTweet(keywords, tweet, tweetLength);
     }
 
-    private static String constructRandomTweet(String[] keywords, int tweetLength, StringBuilder tweet) {
+    private String constructRandomTweet(String[] keywords, StringBuilder tweet, int tweetLength) {
         for (int i = 0; i < tweetLength; i++) {
-            tweet.append(WORDS[RANDOM.nextInt()]).append("");
+            tweet.append(WORDS[RANDOM.nextInt(WORDS.length)]).append(" ");
             if (i == tweetLength / 2) {
-                tweet.append(keywords[RANDOM.nextInt(keywords.length)]).append("");
+                tweet.append(keywords[RANDOM.nextInt(keywords.length)]).append(" ");
             }
         }
         return tweet.toString().trim();
     }
+
 }
