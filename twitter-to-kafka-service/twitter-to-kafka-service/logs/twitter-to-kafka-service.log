@@ -1,14 +1,11 @@
-2025-01-14 19:27:25 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests]: TwitterToKafkaServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-01-14 19:27:26 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication for test class com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests
-2025-01-14 19:27:26 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - Starting TwitterToKafkaServiceApplicationTests using Java 17.0.6 with PID 22452 (started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service)
-2025-01-14 19:27:26 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-14 19:27:26 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - Started TwitterToKafkaServiceApplicationTests in 0.465 seconds (process running for 1.392)
-2025-01-14 19:27:26 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
-2025-01-14 19:27:26 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
-2025-01-14 19:29:21 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests]: TwitterToKafkaServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-01-14 19:29:21 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication for test class com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests
-2025-01-14 19:29:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - Starting TwitterToKafkaServiceApplicationTests using Java 17.0.6 with PID 10372 (started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service)
-2025-01-14 19:29:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-14 19:29:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - Started TwitterToKafkaServiceApplicationTests in 0.471 seconds (process running for 1.188)
-2025-01-14 19:29:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
-2025-01-14 19:29:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 19:40:00 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests]: TwitterToKafkaServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-01-15 19:40:00 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication for test class com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests
+2025-01-15 19:40:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - Starting TwitterToKafkaServiceApplicationTests using Java 17.0.6 with PID 22580 (started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service)
+2025-01-15 19:40:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 19:40:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - Started TwitterToKafkaServiceApplicationTests in 0.458 seconds (process running for 1.4)
+2025-01-15 19:40:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-15 19:40:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 19:40:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
+2025-01-15 19:40:01 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterToKafkaStreamRunner - Started filtering twitter stream for keywords: [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-15 19:40:01 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2025-01-15 19:40:01 [SpringApplicationShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterToKafkaStreamRunner - Closing twitter stream

@@ -1,0 +1,11 @@
+2025-01-14 19:27:40 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 10252 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-14 19:27:40 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-14 19:27:40 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.593 seconds (process running for 0.927)
+2025-01-14 19:27:40 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-14 19:27:40 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-14 19:30:59 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 6364 (D:\Programowanie\IntelliJ\eed-microservices-demo\twitter-to-kafka-service\target\classes started by jacek in D:\Programowanie\IntelliJ\eed-microservices-demo)
+2025-01-14 19:30:59 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-14 19:30:59 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.604 seconds (process running for 0.931)
+2025-01-14 19:30:59 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2025-01-14 19:30:59 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservice, Spring, Kafka, Elasticsearch]
+2025-01-14 19:30:59 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Welcome message: Hello
