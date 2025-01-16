@@ -34,3 +34,4 @@ build/
 
 twitter-to-kafka-service/twitter-to-kafka-service/logs/
 
+/twitter-to-kafka-service/logs/archived/
