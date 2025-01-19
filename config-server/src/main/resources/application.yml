@@ -1,0 +1,7 @@
+server:
+  port:
+
+logging:
+  level:
+    ROOT: INFO
+    org.spring.framework.cloud.config: DEBUG
