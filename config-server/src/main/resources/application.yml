@@ -5,3 +5,17 @@ logging:
   level:
     ROOT: INFO
     org.spring.framework.cloud.config: DEBUG
+
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///D:/Programowanie/IntelliJ/eed-microservices-demo/config-server-repository
+          clone-on-start: true
+    fail-fast: true
+
+log:
+  app-name: config-server
