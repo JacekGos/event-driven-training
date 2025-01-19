@@ -30,7 +30,7 @@ public class TwitterKafkaProducer implements KafkaProducer<Long, TwitterAvroMode
         LOG.info("Sending message='{}' to topic='{}'", message, topicName);
 
         CompletableFuture<SendResult<Long, TwitterAvroModel>> kafkaResultFuture
-                = kafkaTemplate.send(topicName, key, message).completable();
+                = kafkaTemplate.send(topicName, key, message);
 
         addCallback(topicName, message, kafkaResultFuture);
     }
