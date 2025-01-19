@@ -3,10 +3,14 @@ spring:
     name: twitter-to-kafka-service
   profiles:
     active: twitter_to_kafka
+  config:
+    import: 'configserver:'
   cloud:
     config:
       name: twitter-to-kafka-service,config-client
-      uri: localhost:8888
-
+      uri: http://127.0.0.1:8888
 log:
   app-name: twitter-to-kafka-service
+
+twitter-to-kafka-service:
+  enable-mock-tweets: true
