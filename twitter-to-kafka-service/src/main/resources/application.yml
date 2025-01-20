@@ -9,6 +9,8 @@ spring:
     config:
       name: twitter-to-kafka-service,config-client
       uri: http://127.0.0.1:8888
+  username: spring_cloud_user
+  password: springCloud_Pwd!
 log:
   app-name: twitter-to-kafka-service
 
