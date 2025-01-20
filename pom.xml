@@ -23,6 +23,7 @@
         <module>kafka/kafka-admin</module>
         <module>common-config</module>
         <module>config-server</module>
+        <module>enc-playground</module>
     </modules>
 
     <properties>
@@ -39,6 +40,7 @@
         <spring-cloud-dependencies.version>2022.0.4</spring-cloud-dependencies.version>
         <logstash-logback-encoder.version>7.4</logstash-logback-encoder.version>
         <java-dotenv.version>5.2.2</java-dotenv.version>
+        <jasypt-spring-boot-starter.version>3.0.3</jasypt-spring-boot-starter.version>
 
     </properties>
     <packaging>pom</packaging>
@@ -166,6 +168,12 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-security</artifactId>
                 <version>${spring-boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.ulisesbocchio</groupId>
+                <artifactId>jasypt-spring-boot-starter</artifactId>
+                <version>${jasypt-spring-boot-starter.version}</version>
             </dependency>
 
             <dependency>
