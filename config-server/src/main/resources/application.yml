@@ -3,7 +3,7 @@ server:
 
 logging:
   level:
-    ROOT: INFO
+    ROOT: DEBUG
     org.spring.framework.cloud.config: DEBUG
 
 spring:
@@ -13,7 +13,10 @@ spring:
     config:
       server:
         git:
-          uri: file:///D:/Programowanie/IntelliJ/eed-microservices-demo/config-server-repository
+          uri: https://github.com/JacekGos/spring-cloud-config-server-repository.git
+          default-label: main
+          username: JacekGos
+          password: ${GITHUB_TOKEN}
           clone-on-start: true
     fail-fast: true
 
