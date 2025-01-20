@@ -3,7 +3,7 @@ server:
 
 logging:
   level:
-    ROOT: DEBUG
+    ROOT: INFO
     org.spring.framework.cloud.config: DEBUG
 
 spring:
@@ -20,8 +20,13 @@ spring:
           clone-on-start: true
     fail-fast: true
   security:
-    user: spring_cloud_user
-    password: springCloud_Pwd!
+    user:
+      name: spring_cloud_user
+      password: ENC(Oj+09lAtvIsYoWgpm3C1novOh8xBoZvYCoyfoMv3hbTsW1Qhj/PDHbpwXO8q0xa/Z4xdBU4HBIYP13pvIPjdMA==)
+
+jasypt:
+  encryptor:
+    password: ${JASYPT_ENCRYPTOR_PASSWORD}
 
 log:
   app-name: config-server
