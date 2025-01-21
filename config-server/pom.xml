@@ -40,6 +40,7 @@
                         <name>
                             ${project.groupId}/config.server:${project.version}
                         </name>
+                        <cache>true</cache>
                     </image>
                 </configuration>
                 <executions>

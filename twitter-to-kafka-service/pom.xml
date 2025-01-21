@@ -69,6 +69,7 @@
                         <name>
                             ${project.groupId}/twitter.to.kafka.service:${project.version}
                         </name>
+                        <cache>true</cache>
                     </image>
                 </configuration>
                 <executions>
