@@ -3,7 +3,7 @@ server:
 
 logging:
   level:
-    ROOT: DEBUG
+    ROOT: INFO
     org.spring.framework.cloud.config: DEBUG
 
 spring:
@@ -21,8 +21,8 @@ spring:
     fail-fast: true
   security:
     user:
-      username: spring_cloud_user
-      password: springCloud_Pwd!
+      username: user
+      password: password
 
 log:
   app-name: config-server

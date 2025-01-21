@@ -38,7 +38,7 @@
                 <configuration>
                     <image>
                         <name>
-                            ${project.groupId}/config.service:${project.version}
+                            ${project.groupId}/config.server:${project.version}
                         </name>
                     </image>
                 </configuration>
