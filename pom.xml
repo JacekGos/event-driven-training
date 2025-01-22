@@ -23,6 +23,7 @@
         <module>kafka/kafka-admin</module>
         <module>common-config</module>
         <module>config-server</module>
+        <module>kafka/kafka-consumer</module>
     </modules>
 
     <properties>
