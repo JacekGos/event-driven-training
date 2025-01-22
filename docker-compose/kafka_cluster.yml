@@ -14,6 +14,7 @@ services:
       ZOOKEEPER_SERVERS: zookeeper:2888:3888
     networks:
       - ${GLOBAL_NETWORK:-kafka}
+    user: "1000:1000"
   schema-registry:
     image: confluentinc/cp-schema-registry:${KAFKA_VERSION}
     hostname: schema-registry
@@ -27,6 +28,7 @@ services:
     environment:
       SCHEMA_REGISTRY_HOST_NAME: schema-registry
       SCHEMA_REGISTRY_KAFKASTORE_CONNECTION_URL: 'zookeeper:2181'
+      SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS: PLAINTEXT://kafka-broker-2:9092,LISTENER_LOCAL://localhost:29092 # for kafka 7.0.0
       SCHEMA_REGISTRY_LISTENERS: http://schema-registry:8081
       SCHEMA_REGISTRY_DEBUG: 'true'
     networks:
