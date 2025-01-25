@@ -36,6 +36,8 @@ twitter-to-kafka-service/twitter-to-kafka-service/logs/
 
 /twitter-to-kafka-service/logs/archived/
 twitter-to-kafka-service/logs/
+/kafka-to-elastic-service/logs/archived/
+/kafka-to-elastic-service/logs/
 /docker-compose/docker-logs/
 /config-server/logs/
 /config-server/src/main/resources/.env
