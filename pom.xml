@@ -25,6 +25,7 @@
         <module>config-server</module>
         <module>kafka/kafka-consumer</module>
         <module>kafka-to-elastic-service</module>
+        <module>elastic</module>
     </modules>
 
     <properties>
