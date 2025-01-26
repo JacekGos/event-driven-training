@@ -45,6 +45,7 @@ public class TwitterElasticIndexClient implements ElasticIndexClient<TwitterInde
         ).stream().map(IndexedObjectInformation::id).collect(Collectors.toList());
         LOG.info("Documents indexed successfully with type: {} and ids: {}", TwitterIndexModel.class.getName(),
                 documentIds);
+
         return documentIds;
     }
 }
