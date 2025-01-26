@@ -1,7 +1,7 @@
-package client.service.impl;
+package com.microservices.demo.elastic.index.client.service.impl;
 
-import client.service.ElasticIndexClient;
-import client.util.ElasticIndexUtil;
+import com.microservices.demo.elastic.index.client.service.ElasticIndexClient;
+import com.microservices.demo.elastic.index.client.util.ElasticIndexUtil;
 import com.microservices.demo.config.ElasticConfigData;
 import index.impl.TwitterIndexModel;
 import org.slf4j.Logger;

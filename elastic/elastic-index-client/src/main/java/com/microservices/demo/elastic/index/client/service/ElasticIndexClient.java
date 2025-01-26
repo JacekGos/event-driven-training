@@ -1,4 +1,4 @@
-package client.service;
+package com.microservices.demo.elastic.index.client.service;
 
 
 import index.IndexModel;

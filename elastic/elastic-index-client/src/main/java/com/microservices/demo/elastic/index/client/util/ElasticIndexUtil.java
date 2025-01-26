@@ -1,4 +1,4 @@
-package client.util;
+package com.microservices.demo.elastic.index.client.util;
 
 import index.IndexModel;
 import org.springframework.data.elasticsearch.core.query.IndexQuery;
