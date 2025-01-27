@@ -8,12 +8,44 @@ spring:
   cloud:
     config:
       name: kafka-to-elastic-service,config-client
-      uri: http://localhost:8888
       username: user
       password: password
-#      name: kafka-to-elastic-service,config-client
-#      username: spring_cloud_user
-#      password: password
 
 log:
-  app-name: kafka-to-elastic-services
+  app-name: kafka-to-elastic-service
+
+#spring:
+#  application:
+#    name: kafka-to-elastic-service
+#  profiles:
+#    active: kafka_to_elastic
+#  config:
+#    import: 'configserver:'
+#  cloud:
+#    config:
+#      name: kafka-to-elastic-service,config-client
+##      uri: http://localhost:8888
+#      username: user
+#      password: password
+
+
+#log:
+#  app-name: kafka-to-elastic-services
+
+logging:
+  level:
+    ROOT: INFO
+
+#spring:
+#  application:
+#    name: kafka-to-elastic-service
+#  profiles:
+#    active: kafka_to_elastic
+#    config:
+#      import: 'configserver:'
+#  cloud:
+#    config:
+#      name: kafka-to-elastic-service,config-client
+##      uri: http://localhost:8888
+#      username: user
+#      password: password
