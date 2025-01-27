@@ -1,7 +1,7 @@
 package com.microservices.demo.elastic.index.client.service;
 
 
-import index.IndexModel;
+import com.microservices.demo.elastic.model.index.IndexModel;
 
 import java.util.List;
 

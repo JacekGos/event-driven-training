@@ -1,6 +1,6 @@
 package com.microservices.demo.elastic.index.client.util;
 
-import index.IndexModel;
+import com.microservices.demo.elastic.model.index.IndexModel;
 import org.springframework.data.elasticsearch.core.query.IndexQuery;
 import org.springframework.data.elasticsearch.core.query.IndexQueryBuilder;
 import org.springframework.stereotype.Component;

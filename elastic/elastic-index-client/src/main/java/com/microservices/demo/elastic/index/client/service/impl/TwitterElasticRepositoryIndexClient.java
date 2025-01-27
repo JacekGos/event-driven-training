@@ -2,7 +2,7 @@ package com.microservices.demo.elastic.index.client.service.impl;
 
 import com.microservices.demo.elastic.index.client.repository.TwitterElasticsearchIndexRepository;
 import com.microservices.demo.elastic.index.client.service.ElasticIndexClient;
-import index.impl.TwitterIndexModel;
+import com.microservices.demo.elastic.model.index.impl.TwitterIndexModel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
