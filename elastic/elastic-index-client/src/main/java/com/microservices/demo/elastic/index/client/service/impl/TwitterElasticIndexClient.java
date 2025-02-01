@@ -4,6 +4,7 @@ import com.microservices.demo.elastic.index.client.service.ElasticIndexClient;
 import com.microservices.demo.elastic.index.client.util.ElasticIndexUtil;
 import com.microservices.demo.config.ElasticConfigData;
 import com.microservices.demo.elastic.model.index.impl.TwitterIndexModel;
+import jakarta.annotation.PostConstruct;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -34,6 +35,12 @@ public class TwitterElasticIndexClient implements ElasticIndexClient<TwitterInde
         this.elasticConfigData = configData;
         this.elasticsearchOperations = elasticOperations;
         this.elasticIndexUtil = indexUtil;
+    }
+
+    @PostConstruct
+    public void init() {
+        LOG.info("elastic config data");
+        LOG.info("elasticConfigData url:{}", elasticConfigData.getConnectionUrl());
     }
 
     @Override

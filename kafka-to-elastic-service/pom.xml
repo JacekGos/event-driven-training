@@ -11,11 +11,12 @@
 
     <artifactId>kafka-to-elastic-service</artifactId>
 
+
     <dependencies>
-        <dependency>
-            <groupId>com.microservices.demo</groupId>
-            <artifactId>app-config-data</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.microservices.demo</groupId>-->
+<!--            <artifactId>app-config-data</artifactId>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>com.microservices.demo</groupId>
             <artifactId>elastic-model</artifactId>
