@@ -30,7 +30,8 @@ import java.util.List;
 
 //@PreAuthorize("isAuthenticated()")
 @RestController
-@RequestMapping(value = "/documents", produces = "application/vnd.api.v1+json")
+//@RequestMapping(value = "/documents", produces = "application/vnd.api.v1+json")
+@RequestMapping(value = "/documents")
 public class ElasticDocumentController {
     private static final Logger LOG = LoggerFactory.getLogger(ElasticDocumentController.class);
 
@@ -90,7 +91,7 @@ public class ElasticDocumentController {
         return ResponseEntity.ok(elasticQueryServiceResponseModel);
     }
 
-    @PostMapping("/get-ducument-by-text")
+    @PostMapping("/get-document-by-text")
     public @ResponseBody
     ResponseEntity<List<ElasticQueryServiceResponseModel>>
     getDocumentByText(@RequestBody ElasticQueryServiceRequestModel elasticQueryServiceRequestModel) {

@@ -14,6 +14,12 @@ elastic-config:
 
 elastic-query-service:
   version: v1
+
+user-config:
+  username: test
+  password: password
+  roles: USER
+
 #  custom-audience: elastic-query-service
 #  webclient:
 #    connect-timeout-ms: 10000

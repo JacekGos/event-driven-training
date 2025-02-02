@@ -1,23 +1,18 @@
 package com.microservices.demo.elastic.query.config;
 
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.security.oauth2.resource.OAuth2ResourceServerProperties;
+import com.microservices.demo.config.UserConfigData;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.convert.converter.Converter;
-import org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler;
-import org.springframework.security.access.expression.method.MethodSecurityExpressionHandler;
-import org.springframework.security.authentication.AbstractAuthenticationToken;
-import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
+import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
-import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
-import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
-import org.springframework.security.web.util.matcher.RequestMatcher;
-
-import java.util.Arrays;
 
 @Configuration
 //@EnableMethodSecurity(prePostEnabled = true)
@@ -40,16 +35,25 @@ public class WebSecurityConfig {
 //    @Value("${security.paths-to-ignore}")
 //    private String[] pathsToIgnore;
 
+    private final UserConfigData userConfigData;
+
+    public WebSecurityConfig(UserConfigData userConfigData) {
+        this.userConfigData = userConfigData;
+    }
+
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 
-//        http
-//                .authorizeHttpRequests(request -> request
-//                        .requestMatchers("/**")
-//                        .permitAll());
-//
-//        return http.build();
-        return null;
+        http
+                .authorizeHttpRequests(request -> request
+                        .requestMatchers("/**")
+                        .hasRole("USER")
+                        .anyRequest()
+                        .authenticated())
+                .csrf(AbstractHttpConfigurer::disable)
+                .httpBasic(Customizer.withDefaults());
+
+        return http.build();
 //        http
 //                .authorizeHttpRequests(requests -> requests
 //                        .requestMatchers(Arrays.stream(pathsToIgnore).map(AntPathRequestMatcher::new).toList().toArray(new RequestMatcher[]{}))
@@ -65,6 +69,20 @@ public class WebSecurityConfig {
     }
 
 
+    @Bean
+    public UserDetailsService userDetailsService() {
+        UserDetails user = User.withUsername(userConfigData.getUsername())
+                .password(passwordEncoder().encode(userConfigData.getPassword()))
+                .roles(userConfigData.getRoles())
+                .build();
+
+        return new InMemoryUserDetailsManager(user);
+    }
+
+    @Bean
+    protected PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
 
 //    @Bean
 //    public MethodSecurityExpressionHandler expressionHandler() {
