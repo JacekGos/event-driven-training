@@ -8,7 +8,8 @@ elastic-query-config:
 
 elastic-config:
   index-name: twitter-index
-  connection-url: http://localhost:9200
+  connection-url: http://127.0.0.1:9200
+#  connection-url: http://host.docker.internal:9200
   connect-timeout-ms: 5000
   socket-timeout-ms: 30000
 

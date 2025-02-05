@@ -36,8 +36,8 @@ retry-config:
 
 elastic-config:
   index-name: twitter-index
-#  connection-url: http://127.0.0.1:9200
-  connection-url: http://localhost:9200
+  connection-url: http://127.0.0.1:9200
+#  connection-url: http://localhost:9200
   #  connection-url: elastic-1:9200
   connect-timeout-ms: 5000
   socket-timeout-ms: 30000

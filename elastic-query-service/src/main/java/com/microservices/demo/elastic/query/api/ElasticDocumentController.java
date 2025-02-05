@@ -12,17 +12,14 @@ package com.microservices.demo.elastic.query.api;
 //import io.swagger.v3.oas.annotations.responses.ApiResponse;
 //import io.swagger.v3.oas.annotations.responses.ApiResponses;
 
+import com.microservices.demo.elastic.query.business.ElasticQueryService;
 import com.microservices.demo.elastic.query.model.ElasticQueryServiceRequestModel;
 import com.microservices.demo.elastic.query.model.ElasticQueryServiceResponseModel;
-import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotEmpty;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PostAuthorize;
-import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -34,59 +31,29 @@ import java.util.List;
 @RequestMapping(value = "/documents")
 public class ElasticDocumentController {
     private static final Logger LOG = LoggerFactory.getLogger(ElasticDocumentController.class);
-
-//    private final ElasticQueryService elasticQueryService;
-//
-//    public ElasticDocumentController(ElasticQueryService queryService) {
-//        this.elasticQueryService = queryService;
-//    }
+    private final ElasticQueryService elasticQueryService;
 
     @Value("${server.port}")
     private String port;
 
-    //    @PostAuthorize("hasPermission(returnObject, 'READ')")
-//    @Operation(summary = "Get all elastic documents.")
-//    @ApiResponses(value = {
-//            @ApiResponse(responseCode = "200", description = "Successful response.", content = {
-//                    @Content(mediaType = "application/vnd.api.v1+json",
-//                            schema = @Schema(implementation = ElasticQueryServiceResponseModel.class)
-//                    )
-//            }),
-//            @ApiResponse(responseCode = "400", description = "Not found."),
-//            @ApiResponse(responseCode = "500", description = "Internal server error.")
-//    })
+    public ElasticDocumentController(ElasticQueryService elasticQueryService) {
+        this.elasticQueryService = elasticQueryService;
+    }
+
     @GetMapping("")
     public @ResponseBody
     ResponseEntity<List<ElasticQueryServiceResponseModel>> getAllDocuments() {
-//        List<ElasticQueryServiceResponseModel> response = elasticQueryService.getAllDocuments();
-//        LOG.info("Elasticsearch returned {} of documents", response.size());
-//        return ResponseEntity.ok(response);
-        List<ElasticQueryServiceResponseModel> response = new ArrayList<>();
+        LOG.info("Elasticsearch getAllDocuments request");
+        List<ElasticQueryServiceResponseModel> response = elasticQueryService.getAllDocuments();
         LOG.info("Elasticsearch returned {} of documents", response.size());
         return ResponseEntity.ok(response);
     }
 
-    //    @PreAuthorize("hasPermission(#id, 'ElasticQueryServiceResponseModel','READ')")
-//    @Operation(summary = "Get elastic document by id.")
-//    @ApiResponses(value = {
-//            @ApiResponse(responseCode = "200", description = "Successful response.", content = {
-//                    @Content(mediaType = "application/vnd.api.v1+json",
-//                            schema = @Schema(implementation = ElasticQueryServiceResponseModel.class)
-//                    )
-//            }),
-//            @ApiResponse(responseCode = "400", description = "Not found."),
-//            @ApiResponse(responseCode = "500", description = "Internal server error.")
-//    })
     @GetMapping("/{id}")
     public @ResponseBody
     ResponseEntity<ElasticQueryServiceResponseModel>
     getDocumentById(@PathVariable @NotEmpty String id) {
-//        ElasticQueryServiceResponseModel elasticQueryServiceResponseModel = elasticQueryService.getDocumentById(id);
-        ElasticQueryServiceResponseModel elasticQueryServiceResponseModel =
-                ElasticQueryServiceResponseModel
-                        .builder()
-                        .id(id)
-                        .build();
+        ElasticQueryServiceResponseModel elasticQueryServiceResponseModel = elasticQueryService.getDocumentById(id);
         LOG.debug("Elasticsearch returned document with id {} on port {}", id, port);
         return ResponseEntity.ok(elasticQueryServiceResponseModel);
     }
