@@ -7,7 +7,11 @@ import com.microservices.demo.elastic.query.model.ElasticQueryServiceResponseMod
 import com.microservices.demo.elastic.query.transformer.ElasticToResponseModelTransformer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
+import reactor.core.publisher.Mono;
 
 
 import java.util.List;
@@ -20,10 +24,14 @@ public class TwitterElasticQueryService implements ElasticQueryService {
     private final ElasticToResponseModelTransformer elasticToResponseModelTransformer;
     private final ElasticQueryClient<TwitterIndexModel> elasticQueryClient;
 
+    private final WebClient webClient;
 
-    public TwitterElasticQueryService(ElasticToResponseModelTransformer elasticToResponseModelTransformer, ElasticQueryClient<TwitterIndexModel> elasticQueryClient) {
+
+
+    public TwitterElasticQueryService(ElasticToResponseModelTransformer elasticToResponseModelTransformer, ElasticQueryClient<TwitterIndexModel> elasticQueryClient, WebClient webClient) {
         this.elasticToResponseModelTransformer = elasticToResponseModelTransformer;
         this.elasticQueryClient = elasticQueryClient;
+        this.webClient = webClient;
     }
 
 
@@ -36,6 +44,10 @@ public class TwitterElasticQueryService implements ElasticQueryService {
     @Override
     public List<ElasticQueryServiceResponseModel> getDocumentByText(String text) {
         LOG.info("Querying elasticsearch by text {}", text);
+
+
+
+
         return elasticToResponseModelTransformer.getResponseModels(elasticQueryClient.getIndexModelByText(text));
     }
 
