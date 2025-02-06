@@ -15,6 +15,7 @@ package com.microservices.demo.elastic.query.api;
 import com.microservices.demo.elastic.query.business.ElasticQueryService;
 import com.microservices.demo.elastic.query.model.ElasticQueryServiceRequestModel;
 import com.microservices.demo.elastic.query.model.ElasticQueryServiceResponseModel;
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotEmpty;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -61,19 +62,36 @@ public class ElasticDocumentController {
     @PostMapping("/get-document-by-text")
     public @ResponseBody
     ResponseEntity<List<ElasticQueryServiceResponseModel>>
-    getDocumentByText(@RequestBody ElasticQueryServiceRequestModel elasticQueryServiceRequestModel) {
-        List<ElasticQueryServiceResponseModel> response = new ArrayList<>();
-        ElasticQueryServiceResponseModel elasticQueryServiceResponseModel =
-                ElasticQueryServiceResponseModel
-                        .builder()
-                        .text(elasticQueryServiceRequestModel.getText())
-                        .build();
-        response.add(elasticQueryServiceResponseModel);
+    getDocumentByText(@RequestBody @Valid ElasticQueryServiceRequestModel elasticQueryServiceRequestModel) {
+        LOG.info("Querying documents for text {}",
+                elasticQueryServiceRequestModel.getText());
+
+        List<ElasticQueryServiceResponseModel>  response =
+                elasticQueryService.getDocumentByText(elasticQueryServiceRequestModel.getText());
 
         LOG.info("Elasticsearch returned {} of documents", response.size());
 
         return ResponseEntity.ok(response);
     }
+
+//    @PostMapping("/get-document-by-text")
+//    public @ResponseBody
+//    ResponseEntity<List<ElasticQueryServiceResponseModel>>
+//    getDocumentByText(@RequestBody ElasticQueryServiceRequestModel elasticQueryServiceRequestModel) {
+//        List<ElasticQueryServiceResponseModel> response = new ArrayList<>();
+//        ElasticQueryServiceResponseModel elasticQueryServiceResponseModel =
+//                ElasticQueryServiceResponseModel
+//                        .builder()
+//                        .text(elasticQueryServiceRequestModel.getText())
+//                        .build();
+//        response.add(elasticQueryServiceResponseModel);
+//
+//        ElasticQueryServiceResponseModel elasticQueryServiceResponseModel = elasticQueryService.getDocumentById(id);
+//
+//        LOG.info("Elasticsearch returned {} of documents", response.size());
+//
+//        return ResponseEntity.ok(response);
+//    }
 //
 //    @Operation(summary = "Get elastic document by id.")
 //    @ApiResponses(value = {

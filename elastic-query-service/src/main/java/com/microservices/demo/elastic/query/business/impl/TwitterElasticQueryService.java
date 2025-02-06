@@ -45,9 +45,6 @@ public class TwitterElasticQueryService implements ElasticQueryService {
     public List<ElasticQueryServiceResponseModel> getDocumentByText(String text) {
         LOG.info("Querying elasticsearch by text {}", text);
 
-
-
-
         return elasticToResponseModelTransformer.getResponseModels(elasticQueryClient.getIndexModelByText(text));
     }
 
