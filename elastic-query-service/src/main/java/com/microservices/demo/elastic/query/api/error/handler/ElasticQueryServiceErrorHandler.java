@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.AccessDeniedException;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -22,6 +23,12 @@ public class ElasticQueryServiceErrorHandler {
     public ResponseEntity<String> handle(AccessDeniedException e) {
         LOG.error("Access denied exception!", e);
         return ResponseEntity.status(HttpStatus.FORBIDDEN).body("You are not authorized to access this resource!");
+    }
+
+    @ExceptionHandler(BadCredentialsException.class)
+    public ResponseEntity<String> handle(BadCredentialsException e) {
+        LOG.error("Bad credentials exception!", e);
+        return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Bad credentials");
     }
 
     @ExceptionHandler(IllegalArgumentException.class)
@@ -48,6 +55,7 @@ public class ElasticQueryServiceErrorHandler {
         Map<String, String> errors = new HashMap<>();
         e.getBindingResult().getAllErrors().forEach(error ->
                 errors.put(((FieldError) error).getField(), error.getDefaultMessage()));
+        errors.values().forEach(er -> LOG.info("error: {}", er));
         return ResponseEntity.badRequest().body(errors);
     }
 
