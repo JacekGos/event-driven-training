@@ -16,5 +16,5 @@ public class ElasticQueryServiceResponseModelV2 extends RepresentationModel<Elas
     private Long id;
     private Long userId;
     private String text;
-    private ZonedDateTime createdAt;
+    private String text2;
 }

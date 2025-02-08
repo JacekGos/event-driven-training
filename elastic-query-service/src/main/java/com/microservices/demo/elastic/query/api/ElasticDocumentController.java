@@ -30,7 +30,7 @@ import java.util.List;
 //@PreAuthorize("isAuthenticated()")
 @RestController
 //@RequestMapping(value = "/documents", produces = "application/vnd.api.v1+json")
-@RequestMapping(value = "/documents")
+@RequestMapping(value = "/documents", produces = "application/vnd.api.v1+json")
 public class ElasticDocumentController {
     private static final Logger LOG = LoggerFactory.getLogger(ElasticDocumentController.class);
     private final ElasticQueryService elasticQueryService;
@@ -60,13 +60,14 @@ public class ElasticDocumentController {
         return ResponseEntity.ok(elasticQueryServiceResponseModel);
     }
 
-    @GetMapping("/v2/{id}")
+    @GetMapping(value = "/v1/{id}", produces = "application/vnd.api.v2+json")
     public @ResponseBody
     ResponseEntity<ElasticQueryServiceResponseModelV2>
     getDocumentByIdV2(@PathVariable @NotEmpty String id) {
         ElasticQueryServiceResponseModel elasticQueryServiceResponseModel = elasticQueryService.getDocumentById(id);
         LOG.debug("Elasticsearch returned document with id {} on port {}", id, port);
-        return ResponseEntity.ok(getV2Model(elasticQueryServiceResponseModel));
+        ElasticQueryServiceResponseModelV2 response = getV2Model(elasticQueryServiceResponseModel);
+        return ResponseEntity.ok(response);
     }
 
     @PostMapping("/v1/get-document-by-text")
@@ -89,8 +90,7 @@ public class ElasticDocumentController {
                 .id(Long.parseLong(responseModel.getId()))
                 .userId(responseModel.getUserId())
                 .text(responseModel.getText())
-//                .text2("Version 2 text")
-                .createdAt(responseModel.getCreatedAt())
+                .text2("Version 2 text")
                 .build();
         responseModelV2.add(responseModel.getLinks());
         return responseModelV2;
