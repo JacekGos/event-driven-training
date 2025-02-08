@@ -18,3 +18,13 @@ spring:
 
 log:
   appName: elastic-query-service
+
+springdoc:
+  show-actuator=true:
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: openapi, swagger-ui
+

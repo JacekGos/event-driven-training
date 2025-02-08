@@ -21,6 +21,16 @@ user-config:
   password: password
   roles: USER
 
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+  show-actuator: true
+
+security:
+  paths-to-ignore: /api-docs, /actuator/**
+
 #  custom-audience: elastic-query-service
 #  webclient:
 #    connect-timeout-ms: 10000
