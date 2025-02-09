@@ -1,21 +1,10 @@
 package com.microservices.demo.elastic.query.api;
 
-//import com.microservices.demo.elastic.query.service.business.ElasticQueryService;
-//import com.microservices.demo.elastic.query.service.common.model.ElasticQueryServiceRequestModel;
-//import com.microservices.demo.elastic.query.service.common.model.ElasticQueryServiceResponseModel;
-//import com.microservices.demo.elastic.query.service.model.ElasticQueryServiceAnalyticsResponseModel;
-//import com.microservices.demo.elastic.query.service.model.ElasticQueryServiceResponseModelV2;
-//import com.microservices.demo.elastic.query.service.security.TwitterQueryUser;
-//import io.swagger.v3.oas.annotations.Operation;
-//import io.swagger.v3.oas.annotations.media.Content;
-//import io.swagger.v3.oas.annotations.media.Schema;
-//import io.swagger.v3.oas.annotations.responses.ApiResponse;
-//import io.swagger.v3.oas.annotations.responses.ApiResponses;
 
 import com.microservices.demo.elastic.query.business.ElasticQueryService;
-import com.microservices.demo.elastic.query.model.ElasticQueryServiceRequestModel;
-import com.microservices.demo.elastic.query.model.ElasticQueryServiceResponseModel;
 import com.microservices.demo.elastic.query.model.ElasticQueryServiceResponseModelV2;
+import com.microservices.demo.elastic.query.service.common.model.ElasticQueryServiceRequestModel;
+import com.microservices.demo.elastic.query.service.common.model.ElasticQueryServiceResponseModel;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

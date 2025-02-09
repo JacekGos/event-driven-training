@@ -3,16 +3,12 @@ package com.microservices.demo.elastic.query.business.impl;
 import com.microservices.demo.elastic.model.index.impl.TwitterIndexModel;
 import com.microservices.demo.elastic.query.business.ElasticQueryService;
 import com.microservices.demo.elastic.query.client.service.ElasticQueryClient;
-import com.microservices.demo.elastic.query.model.ElasticQueryServiceResponseModel;
 import com.microservices.demo.elastic.query.model.assembler.ElasticQueryServiceResponseModelAssembler;
-import com.microservices.demo.elastic.query.transformer.ElasticToResponseModelTransformer;
+import com.microservices.demo.elastic.query.service.common.model.ElasticQueryServiceResponseModel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
-import reactor.core.publisher.Mono;
 
 
 import java.util.List;
