@@ -14,6 +14,16 @@ elastic-query-web-client:
 #    base-url: 'http://gateway-service/elastic-query-service/documents'
 #    base-url: 'http://elastic-query-service/elastic-query-service/documents'
     base-url: 'http://localhost:8183/elastic-query-service/documents'
+    service-id: elastic-query-value
+    instances:
+      -
+        id: elastic-query-service-1
+        host: localhost
+        port: 8183
+      - id: elastic-query-service-2
+        host: localhost
+        port: 8185
+
   query-by-text:
     method: POST
     uri: "/get-document-by-text"
