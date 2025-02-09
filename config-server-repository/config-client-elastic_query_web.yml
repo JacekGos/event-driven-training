@@ -12,7 +12,8 @@ elastic-query-web-client:
     content-type: 'application/vnd.api.v1+json'
     accept-type: 'application/vnd.api.v1+json'
 #    base-url: 'http://gateway-service/elastic-query-service/documents'
-    base-url: 'http://elastic-query-service/elastic-query-service/documents'
+#    base-url: 'http://elastic-query-service/elastic-query-service/documents'
+    base-url: 'http://localhost:8183/elastic-query-service/documents'
   query-by-text:
     method: POST
     uri: "/get-document-by-text"

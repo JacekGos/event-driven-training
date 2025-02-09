@@ -2,6 +2,7 @@ package com.microservices.demo.elastic.query.web.client.api;
 
 import com.microservices.demo.elastic.query.web.client.model.ElasticQueryWebClientRequestModel;
 import com.microservices.demo.elastic.query.web.client.model.ElasticQueryWebClientResponseModel;
+import com.microservices.demo.elastic.query.web.client.service.ElasticQueryWebClient;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,7 +19,11 @@ public class QueryController {
 
     private static final Logger LOG = LoggerFactory.getLogger(QueryController.class);
 
-//    private final ElasticQueryWebClient elasticQueryWebClient;
+    private final ElasticQueryWebClient elasticQueryWebClient;
+
+    public QueryController(ElasticQueryWebClient elasticQueryWebClient) {
+        this.elasticQueryWebClient = elasticQueryWebClient;
+    }
 
 
     @GetMapping("")
@@ -43,14 +48,16 @@ public class QueryController {
                               Model model) {
         LOG.info("Querying with text {}", requestModel.getText());
 
-        List<ElasticQueryWebClientResponseModel> responseModel = new ArrayList<>();
-        responseModel.add(
-                ElasticQueryWebClientResponseModel
-                        .builder()
-                        .id("id")
-                        .text(requestModel.getText())
-                        .build()
-        );
+        List<ElasticQueryWebClientResponseModel> responseModel = elasticQueryWebClient.getDataByText(requestModel);
+
+//        List<ElasticQueryWebClientResponseModel> responseModel = new ArrayList<>();
+//        responseModel.add(
+//                ElasticQueryWebClientResponseModel
+//                        .builder()
+//                        .id("id")
+//                        .text(requestModel.getText())
+//                        .build()
+//        );
 
         model.addAttribute("elasticQueryWebClientResponseModels", responseModel);
         model.addAttribute("searchText", requestModel.getText());

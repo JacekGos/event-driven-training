@@ -16,6 +16,5 @@ import lombok.NoArgsConstructor;
 public class ElasticQueryServiceRequestModel {
     private String id;
     @NotEmpty
-    @Max(value = 3, message = "dupsko")
     private String text;
 }
