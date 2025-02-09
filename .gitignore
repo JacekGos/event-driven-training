@@ -44,3 +44,5 @@ twitter-to-kafka-service/logs/
 /elastic-query-service/logs/*
 /elastic-query-service/logs/archived/*
 
+elastic-query-web-client/logs/*
+

@@ -50,35 +50,8 @@ public class WebSecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 
-//        http.authorizeHttpRequests(requests -> requests
-//                        .requestMatchers(
-//                                new AntPathRequestMatcher("/api-docs/**"),
-//                                new AntPathRequestMatcher("/swagger-ui/**"),
-//                                new AntPathRequestMatcher("/swagger-ui.html"),
-//                                new AntPathRequestMatcher("/v3/api-docs/**"),
-//                                new AntPathRequestMatcher("/actuator/**")
-//                        ).permitAll()
-//                        .anyRequest().authenticated()
-//                )
-//                .sessionManagement(session -> session
-//                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-//                .csrf(AbstractHttpConfigurer::disable);
-//
-//        return http.build();
-
-//        http
-//                .authorizeHttpRequests(requests -> requests
-//                        .requestMatchers(Arrays.stream(pathsToIgnore).map(AntPathRequestMatcher::new).toList().toArray(new RequestMatcher[]{}))
-//                        .hasRole("USER")
-//                        .anyRequest().authenticated())
-//                .sessionManagement((session) -> session
-//                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-//                .csrf(AbstractHttpConfigurer::disable);
-//        return http.build();
-
         http
                 .authorizeHttpRequests(request -> request
-//                        .requestMatchers("/**")
                         .requestMatchers(Arrays.stream(pathsToIgnore)
                                 .map(AntPathRequestMatcher::new)
                                 .toList().toArray(new RequestMatcher[]{}))
@@ -90,18 +63,6 @@ public class WebSecurityConfig {
                 .httpBasic(Customizer.withDefaults());
 
         return http.build();
-//        http
-//                .authorizeHttpRequests(requests -> requests
-//                        .requestMatchers(Arrays.stream(pathsToIgnore).map(AntPathRequestMatcher::new).toList().toArray(new RequestMatcher[]{}))
-//                        .permitAll()
-//                        .anyRequest().authenticated())
-//                .sessionManagement((session) -> session
-//                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-//                .csrf(AbstractHttpConfigurer::disable)
-//                .oauth2ResourceServer((oauth2) -> oauth2
-//                        .jwt(jwt -> jwt
-//                                .jwtAuthenticationConverter(twitterQueryUserJwtConverter())));
-//        return http.build();
     }
 
 
@@ -119,47 +80,4 @@ public class WebSecurityConfig {
     protected PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
-
-//    @Bean
-//    public MethodSecurityExpressionHandler expressionHandler() {
-//        DefaultMethodSecurityExpressionHandler expressionHandler = new DefaultMethodSecurityExpressionHandler();
-//        expressionHandler.setPermissionEvaluator(queryServicePermissionEvaluator);
-//        return expressionHandler;
-//    }
-
-//    @Bean
-//    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-//        http
-//                .authorizeHttpRequests(requests -> requests
-//                        .requestMatchers(Arrays.stream(pathsToIgnore).map(AntPathRequestMatcher::new).toList().toArray(new RequestMatcher[]{}))
-//                        .permitAll()
-//                        .anyRequest().authenticated())
-//                .sessionManagement((session) -> session
-//                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-//                .csrf(AbstractHttpConfigurer::disable)
-//                .oauth2ResourceServer((oauth2) -> oauth2
-//                        .jwt(jwt -> jwt
-//                                .jwtAuthenticationConverter(twitterQueryUserJwtConverter())));
-//        return http.build();
-//    }
-//
-//    @Bean
-//    JwtDecoder jwtDecoder(@Qualifier("elastic-query-service-audience-validator")
-//                          OAuth2TokenValidator<Jwt> audienceValidator) {
-//        NimbusJwtDecoder jwtDecoder = (NimbusJwtDecoder) JwtDecoders.fromOidcIssuerLocation(
-//                oAuth2ResourceServerProperties.getJwt().getIssuerUri());
-//        OAuth2TokenValidator<Jwt> withIssuer =
-//                JwtValidators.createDefaultWithIssuer(
-//                        oAuth2ResourceServerProperties.getJwt().getIssuerUri());
-//        OAuth2TokenValidator<Jwt> withAudience =
-//                new DelegatingOAuth2TokenValidator<>(withIssuer, audienceValidator);
-//        jwtDecoder.setJwtValidator(withAudience);
-//        return jwtDecoder;
-//    }
-//
-//    @Bean
-//    Converter<Jwt, ? extends AbstractAuthenticationToken> twitterQueryUserJwtConverter() {
-//        return new TwitterQueryUserJwtConverter(twitterQueryUserDetailsService);
-//    }
-
 }
