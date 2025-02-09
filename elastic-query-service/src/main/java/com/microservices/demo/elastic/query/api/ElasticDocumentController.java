@@ -124,7 +124,7 @@ public class ElasticDocumentController {
         List<ElasticQueryServiceResponseModel> response =
                 elasticQueryService.getDocumentByText(elasticQueryServiceRequestModel.getText());
 
-        LOG.info("Elasticsearch returned {} of documents", response.size());
+        LOG.info("Elasticsearch returned {} of documents on port: {}", response.size(), port);
 
         return ResponseEntity.ok(response);
     }
