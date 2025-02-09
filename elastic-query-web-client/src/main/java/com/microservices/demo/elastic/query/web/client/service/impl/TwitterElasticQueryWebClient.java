@@ -1,6 +1,7 @@
 package com.microservices.demo.elastic.query.web.client.service.impl;
 
 import com.microservices.demo.config.ElasticQueryWebClientConfigData;
+import com.microservices.demo.elastic.query.web.client.exception.ElasticQueryWebClientException;
 import com.microservices.demo.elastic.query.web.client.model.ElasticQueryWebClientRequestModel;
 import com.microservices.demo.elastic.query.web.client.model.ElasticQueryWebClientResponseModel;
 import com.microservices.demo.elastic.query.web.client.service.ElasticQueryWebClient;
@@ -37,7 +38,38 @@ public class TwitterElasticQueryWebClient implements ElasticQueryWebClient {
 
     @Override
     public List<ElasticQueryWebClientResponseModel> getDataByText(ElasticQueryWebClientRequestModel requestModel) {
-        return null;
+        LOG.info("Querying by text {}", requestModel.getText());
+
+        return getWebClient(requestModel)
+                .bodyToFlux(ElasticQueryWebClientResponseModel.class)
+                .collectList()
+                .block();
+    }
+
+    private WebClient.ResponseSpec getWebClient(ElasticQueryWebClientRequestModel requestModel) {
+        return webClientBuilder
+                .build()
+                .method(HttpMethod.valueOf(elasticQueryWebClientConfigData.getQueryByText().getMethod()))
+                .uri(elasticQueryWebClientConfigData.getQueryByText().getUri())
+                .accept(MediaType.valueOf(elasticQueryWebClientConfigData.getQueryByText().getAccept()))
+//                .header(CORRELATION_ID_HEADER, MDC.get(CORRELATION_ID_KEY))
+                .body(BodyInserters.fromPublisher(Mono.just(requestModel), createParameterizedTypeReference()))
+                .retrieve()
+                .onStatus(
+                        httpStatus -> httpStatus.equals(HttpStatus.UNAUTHORIZED),
+                        clientResponse -> Mono.just(new BadCredentialsException("Not authenticated!")))
+                .onStatus(
+                        s -> s.equals(HttpStatus.BAD_REQUEST),
+                        clientResponse -> Mono.just(
+                                new ElasticQueryWebClientException(clientResponse.statusCode().toString())))
+                .onStatus(
+                        s -> s.equals(HttpStatus.INTERNAL_SERVER_ERROR),
+                        clientResponse -> Mono.just(new Exception(clientResponse.statusCode().toString())));
+    }
+
+    private <T> ParameterizedTypeReference<T> createParameterizedTypeReference() {
+        return new ParameterizedTypeReference<>() {
+        };
     }
 
     //    @Override
@@ -71,8 +103,5 @@ public class TwitterElasticQueryWebClient implements ElasticQueryWebClient {
 //    }
 //
 //
-//    private <T> ParameterizedTypeReference<T> createParameterizedTypeReference() {
-//        return new ParameterizedTypeReference<>() {
-//        };
-//    }
+
 }
