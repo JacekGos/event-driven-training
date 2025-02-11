@@ -49,8 +49,9 @@
         <logstash-logback-encoder.version>7.4</logstash-logback-encoder.version>
         <java-dotenv.version>5.2.2</java-dotenv.version>
         <elastic.version>7.17.4</elastic.version>
-<!--        <springdoc-openapi-ui.version>1.8.0</springdoc-openapi-ui.version>-->
         <springdoc-openapi-ui.version>2.3.0</springdoc-openapi-ui.version>
+        <postgresql.version>42.6.0</postgresql.version>
+
 
     </properties>
     <packaging>pom</packaging>
@@ -209,6 +210,12 @@
                 <groupId>org.springframework.kafka</groupId>
                 <artifactId>spring-kafka</artifactId>
                 <version>${spring-kafka.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>${postgresql.version}</version>
             </dependency>
 
             <dependency>

@@ -39,8 +39,23 @@ spring:
         jwt:
 #          issuer-uri: http://localhost:9091/auth/realms/microservices-realm
           issuer-uri: http://localhost:9091/realms/microservices_realm
-          jwk-set-uri: http://localhost:9091/auth/realms/microservices-realm/protocol/openid-connect/certs
-
+          jwk-set-uri: http://localhost:9091/realms/microservices_realm/protocol/openid-connect/certs
+  jpa:
+    open-in-view: false
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL9Dialect
+  datasource:
+    url: jdbc:postgresql://localhost:5432/eed-training?currentSchema=public&binaryTransfer=true&reWriteBatchedInserts=true
+    username: test_user
+    password: password
+    driver-class-name: org.postgresql.Driver
+    platform: postgres
+    schema: classpath:init-schema.sql
+    data: classpath:init-data.sql
+    initialization-mode: always
 
 #  custom-audience: elastic-query-service
 #  webclient:
