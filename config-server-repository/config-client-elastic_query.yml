@@ -15,6 +15,7 @@ elastic-config:
 
 elastic-query-service:
   version: v1
+  custom-audience: elastic-query-service
 
 user-config:
   username: test
