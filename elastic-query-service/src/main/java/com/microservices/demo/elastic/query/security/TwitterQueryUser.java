@@ -19,7 +19,7 @@ public class TwitterQueryUser implements UserDetails {
 
     private Collection<? extends GrantedAuthority> authorities;
 
-//    private Map<String, PermissionType> permissions;
+    private Map<String, PermissionType> permissions;
 
     public void setAuthorities(Collection<? extends GrantedAuthority> authorities) {
         this.authorities = authorities;
