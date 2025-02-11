@@ -31,6 +31,15 @@ springdoc:
 security:
   paths-to-ignore: /api-docs, /actuator/**
 
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:9091/auth/realms/microservices-realm
+          jwk-set-uri: http://localhost:9091/auth/realms/microservices-realm/protocol/openid-connect/certs
+
+
 #  custom-audience: elastic-query-service
 #  webclient:
 #    connect-timeout-ms: 10000
